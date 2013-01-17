@@ -1,0 +1,24 @@
+Source: python-voluptuous
+Section: python
+Priority: optional
+Maintainer: Antoine Musso <hashar@free.fr>
+Build-Depends: debhelper (>= 9), python-dev (>= 2.6.6-3)
+Standards-Version: 3.9.3
+Homepage: http://github.com/alecthomas/voluptuous
+X-Python-Version: >= 2.6
+
+Package: python-voluptuous
+Architecture: all
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Description: Python library to validate data
+ Voluptuous is primarily intended to validate data coming in to Python
+ as JSON, YAML, etc. Its goals are:
+  * simplicity
+  * support for complex data structures
+  * provide useful error messages
+ .
+ It has been inspired by Validino and to a lesser extent by jsonvalidator and
+ json_schema. The aim is to offer a light-weight style with three main goals:
+  1. simplicity
+  2. support for complex data structures
+  3. providing useful error messages
