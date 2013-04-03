@@ -1,3 +1,20 @@
+python-voluptuous (0.7.1-1) UNRELEASED; urgency=low
+
+  * New upstream release
+  * debian/control:
+    - Add myself to Uploaders
+    - Replace python-dev with python-all for Build-Depends
+    - Add Build-Depends on python-nose and python-setuptools
+  * debian/gbp.conf:
+    - Import git-buildpackage configuration
+  * debian/rules:
+    - Enable unit tests
+    - Rework get-orig-source to use --download-current-version
+  * debian/source/options:
+    - Add .gitreview to extend-diff-ignore
+
+ -- Paul Belanger <paul.belanger@polybeacon.com>  Tue, 02 Apr 2013 20:04:00 -0400
+
 python-voluptuous (0.6.1-1) precise; urgency=low
 
   * New upstream release

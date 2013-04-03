@@ -6,7 +6,8 @@
 %:
 	dh $@ --with python2
 
-DEB_UPSTREAM_VERSION=$(shell dpkg-parsechangelog | sed -rne 's,^Version: ([^-]+).*,\1,p')
+override_dh_auto_test:
+	nosetests --verbose
 
 get-orig-source:
-	uscan --download-version $(DEB_UPSTREAM_VERSION) --force-download --rename
+	uscan --noconf --force-download --rename --repack --destdir=. --download-current-version

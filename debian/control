@@ -2,7 +2,11 @@ Source: python-voluptuous
 Section: python
 Priority: optional
 Maintainer: Antoine Musso <hashar@free.fr>
-Build-Depends: debhelper (>= 9), python-dev (>= 2.6.6-3)
+Uploaders: Paul Belanger <paul.belanger@polybeacon.com>
+Build-Depends: debhelper (>= 9),
+ python-all (>= 2.6.6-3),
+ python-nose,
+ python-setuptools
 Standards-Version: 3.9.3
 Homepage: http://github.com/alecthomas/voluptuous
 X-Python-Version: >= 2.6
